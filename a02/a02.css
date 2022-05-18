@@ -1,0 +1,81 @@
+    body {
+        background-color: rgb(8, 8, 8);
+    }
+    
+    @font-face {
+        font-family: 'Title';
+        src: url(./The\ Californication.ttf);
+    }
+    
+    .contingut {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-template-areas: "main title title" "main tracklist play" "main tracklist play";
+        grid-gap: 10px;
+    }
+    
+    .main {
+        grid-area: main;
+        text-align: center;
+        margin-top: 70px;
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    /*HOVER, FOCUS I CURSOR A LA PORTADA DE L'ALBUM*/
+    
+    .img-tr:hover,
+    .img-tr:focus {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    @-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+    
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
+    }
+    
+    .tracklist {
+        grid-area: tracklist;
+        text-align: center;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .title {
+        grid-area: title;
+        color: transparent;
+        font-family: Title;
+        text-align: center;
+        font-size: 55px;
+        margin-top: -60px;
+        -webkit-text-stroke: 0.01px aliceblue;
+    }
+    
+    h6 {
+        font-size: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: -55px;
+        color: aliceblue;
+    }
+    
+    .play {
+        grid-area: play;
+        text-align: center;
+        margin: auto;
+    }
