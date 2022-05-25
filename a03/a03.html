@@ -5,23 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vidasos</title>
+    <link rel="stylesheet" href="./a03.css">
 </head>
 
 <body>
-    <video controls muted src="./vids/Funny Cat And mirror Video_Funny video_What's App Videos_30 Seconds Status Video_.mp4" class="vid">
-        <source> </source>
-        Que mono el gatito
-    </video>
-    <video controls muted src="./vids/THAILAND IN 30 SECONDS _ CINEMATIC VIDEO_ 4k.mp4" class="vid">
-        Quiero ir a Tailandia
-    </video>
-    <video controls muted src="./vids/30 Second Motivational Video (Effort feat. Ray Lewis).mp4" class="vid">
-        Motivation
-    </video>
-    <video controls muted src="./vids/Sergio Perez Drives F1 Car Through New York City.mp4" class="vid">
-        Two dreams one vid
-    </video>
+    <div class="limit">
+        <div class="video">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" width="520" height="440">
+                <source src="./vids/Funny Cat And mirror Video_Funny video_What's App Videos_30 Seconds Status Video_.mp4"></source>
+            </video>
+        </div>
+        <h1>Un gato luchador</h1>
+        <div class="video">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" width="520" height="440">
+                <source src="./vids/THAILAND IN 30 SECONDS _ CINEMATIC VIDEO_ 4k.mp4"></source>
+            </video>
+        </div>
+        <h1>Quiero ir a Tailandia</h1>
+        <div class="video">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" width="520" height="440"> 
+                <source src="./vids/30 Second Motivational Video (Effort feat. Ray Lewis).mp4"></source>
+            </video>
+        </div>
+        <h1>Motivation...</h1>
+        <div class="video">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" width="520" height="440">
+                <source src="./vids/Sergio Perez Drives F1 Car Through New York City.mp4"></source>
+            </video>
+        </div>
+        <h1>Mi sueño</h1>
+    </div>
 </body>
 
 </html>
